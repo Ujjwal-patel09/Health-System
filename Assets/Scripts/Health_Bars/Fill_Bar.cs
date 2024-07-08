@@ -18,13 +18,13 @@ public class Fill_Bar : MonoBehaviour
    {
      // construct player_health instance from health system//
       player_health = new Health_System(player_CurrentHealth,player_MaxHealth);
-      Debug.Log(player_health._CurrentHealth);
+      //Debug.Log(player_health._CurrentHealth);
    }
 
     // fill bar //
    public void fill_Amount()
    {
-      lerpSpeed = 7f * Time.deltaTime;// increase ammount for harder the effect
+      lerpSpeed = 10f * Time.deltaTime;// increase ammount for harder the effect
       fill_Bar.fillAmount = Mathf.Lerp(fill_Bar.fillAmount,player_health._CurrentHealth / player_health._MaxHealth,lerpSpeed);// for smooth slide
       //fill_Bar.fillAmount = player_health._CurrentHealth / player_health._MaxHealth;// for absolute cut
 
@@ -36,12 +36,12 @@ public class Fill_Bar : MonoBehaviour
    public void TakeDamage()
    {
       player_health.Damage(20);
-      Debug.Log(player_health._CurrentHealth);
+      //Debug.Log(player_health._CurrentHealth);
    }
 
    public void GainHealth()
    {
       player_health.Heal(20);
-      Debug.Log(player_health._CurrentHealth);
+      //Debug.Log(player_health._CurrentHealth);
    }
 }
