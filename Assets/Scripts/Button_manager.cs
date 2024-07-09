@@ -11,6 +11,7 @@ public class Button_manager : MonoBehaviour
    public Block_Bar block_Bar;
    public Tail_Bar tail_Bar;
    public Heart_Bar heart_Bar;
+   public Number_Bar number_Bar;
 
    private void Update() 
    {
@@ -33,6 +34,7 @@ public class Button_manager : MonoBehaviour
       block_Bar.TakeDamage();
       tail_Bar.TakeDamage();
       heart_Bar.TakeDamage();
+      number_Bar.TakeDamage();
       
    }
 
@@ -44,6 +46,7 @@ public class Button_manager : MonoBehaviour
       block_Bar.GainHealth();
       tail_Bar.GainHealth();
       heart_Bar.GainHealth();
+      number_Bar.GainHealth();
 
    }
 }

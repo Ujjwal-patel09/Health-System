@@ -35,13 +35,13 @@ public class Fill_Bar : MonoBehaviour
 
    public void TakeDamage()
    {
-      player_health.Damage(20);
+      player_health.Damage(10);
       //Debug.Log(player_health._CurrentHealth);
    }
 
    public void GainHealth()
    {
-      player_health.Heal(20);
+      player_health.Heal(10);
       //Debug.Log(player_health._CurrentHealth);
    }
 }
